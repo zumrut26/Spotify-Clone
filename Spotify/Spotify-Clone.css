@@ -1,0 +1,533 @@
+/*
+div.{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .015em;
+    font-weight: var(--glue-font-weight-normal);
+    color: #b3b3b3;
+    text-transform: none;
+}
+*/
+
+* {
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+}
+
+div.container div.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: rgb(17, 17, 17);
+    width: 1115px;
+    height: 60px;
+    margin-top: 0;
+    margin-left: 238px;
+    position: fixed;
+	top: 0;
+	/* width: 100%; */
+	z-index: 10000;
+	/* width: 100%; */
+	left:0;
+	right: 0;
+	z-index: 99999;
+}
+
+div.container div.top-bar header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+div.container div.top-bar header div.top-bar-left {
+    padding-right: 51pc;
+}
+
+div.container div.top-bar header div.top-bar-right {
+    padding-right: 30px;
+}
+
+div.container div.top-bar header div.top-bar-left .top-bar-back-button {
+    margin-right: 16px;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    height: 35px;
+    width: 35px;
+}
+
+div.container div.top-bar header div.top-bar-left .top-bar-forward-button {
+    margin-right: 16px;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    height: 35px;
+    width: 35px;
+}
+
+div.container div.top-bar header div.top-bar-left .top-bar-back-button svg polyline {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+}
+
+div.container div.top-bar header div.top-bar-left .top-bar-forward-button svg polyline {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+}
+
+div.container div.top-bar header div.top-bar-right button.user-widget-link {
+    display: flex;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0;
+}
+
+div.container div.top-bar header div.top-bar-right button.user-widget-link svg {
+    fill: white;
+    padding: 5px;
+}
+
+div.container div.top-bar header div.top-bar-right button.user-widget-link .user-widget-name {
+    font-weight: 800;
+    padding: 4px;
+}
+
+div.container div.top-bar header div.top-bar-right button div img {
+    width: 28px;
+    height: 28px;
+    border-radius: 30px;
+}
+
+/*nav-bar*/
+
+div.container div.nav-bar {
+    background-color: black;
+}
+
+div.container div.nav-bar {
+    height: 534px;
+    width: 238px;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+div.container div.nav-bar nav div.banner {
+    width: 160px;
+    height: 40px;
+}
+
+div.container div.nav-bar nav div.banner a.logo svg {
+    color: white;
+    padding: 23px;
+    width: 131px;
+    height: 40px;
+}
+
+div.container div.nav-bar nav ul {
+    padding-left: 22px;
+    padding-top: 35px;
+}
+
+div.container div.nav-bar nav ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #b3b3b3;
+    text-decoration: none;
+    padding-bottom: 10px;
+    
+}
+
+div.container div.nav-bar nav ul li a span {
+    padding-left: 15px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: var(--glue-font-weight-normal);
+    text-transform: none;
+    font-weight: 800;
+}
+
+div.container div.nav-bar nav div.playing-lists {
+    color: #b3b3b3;
+    padding-left: 22px;
+    padding-top: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: none;
+    font-weight: 800;
+}
+
+div.container div.nav-bar nav div.playing-lists button {
+    transition: opacity .2s linear;
+    display: flex;
+    opacity: .7;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+    padding: 5px var(--left-sidebar-padding-right) 5px var(--left-sidebar-padding-left);
+    padding-top: 10px;
+}
+
+div.container div.nav-bar nav div.playing-lists button svg {
+    fill: #000;
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+}
+
+div.container div.nav-bar nav div.playing-lists .create-list svg {
+    height: 25px;
+    width: 25px;
+    margin-right: 16px;
+}
+
+div.container div.nav-bar nav div.playing-lists .create-list svg.like-svg {
+    background: linear-gradient(135deg,#450af5,#c4efd9);
+}
+
+div.container div.nav-bar nav div.playing-lists .create-list span {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+div.container div.nav-bar nav div.playing-lists hr {
+    width: 190px;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+div.container div.nav-bar nav div.playing-lists div.playlist {
+    height: 135px;
+    overflow: auto;
+    margin-right: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #47575e;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #39484f;
+}
+
+div.container div.nav-bar nav div.playing-lists div.playlist ul {
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 10px;
+    margin-left: -10px;
+}
+
+div.container div.nav-bar nav div.playing-lists div.playlist ul li a span {
+    font-weight: 700;
+}
+
+div.container div.nav-bar nav div.playing-lists div.spotify-download a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+
+/* main-view */
+
+div.container div.main-view {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 238px;
+    width: calc(100vw - 251px);
+    background: rgb(17, 17, 17);
+}
+
+div.container div.main-view .shortcuts-lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: self-start;
+}
+
+div.container div.main-view .shortcuts-lists div.shortcuts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+div.container div.main-view .shortcuts-lists div.shortcuts a {
+    text-decoration: none;
+}
+
+div.container div.main-view .shortcuts-lists div.shortcuts a h2 {
+    color: white;
+    font-size: 22px;
+    letter-spacing: -1px;
+}
+
+div.container div.main-view .shortcuts-lists div.shortcuts a span {
+    color: #b3b3b3;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding-left: 30px;
+}
+
+div.container div.main-view .shortcuts-lists div.shortcuts-left {
+    margin-right: 52pc;
+    margin-left: 25px;
+}
+
+div.container div.main-view section.shortcuts-lists div.playlist div.list-photo img {
+    width: 160px;
+    height: 160px;
+}
+
+div.container div.main-view section.shortcuts-lists div.playlist div.playlist-drake div.list-photo img {
+    border-radius: 80px;
+}
+
+div.container div.main-view .shortcuts-lists div.playlists {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.container div.main-view .shortcuts-lists div.playlists div.playlist {
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(21, 21, 21);
+    margin-right: -10px;
+    margin-left: 30px;
+    width: 155px;
+    height: 260px;
+}
+
+div.container div.main-view .shortcuts-lists div.playlists div.playlist div div {
+    padding-top: 8px;
+}
+
+div.container div.main-view .shortcuts-lists div.playlists div.playlist div.play-button button {
+    color: #fff;
+    background-color: #1db954;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+
+div.container div.main-view .shortcuts-lists div.playlists div.playlist div a {
+    text-decoration: none;
+}
+
+div.container div.main-view .shortcuts-lists div.playlists div.playlist div a div.text {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+div.container div.main-view .shortcuts-lists div.playlists div.playlist div span {
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+div.playlists div.playlist button svg{
+    margin-top: 5px;
+} 
+
+div.playlist div.play-button {
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 100px;
+    opacity: 0;
+    transition: 200ms;
+}
+div.playlist:hover .play-button {
+    opacity: 1;
+    margin-top: -50px;
+}
+
+div.container div.main-view .shortcuts-lists div.playlists div.playlist:hover {
+    background-color: rgb(33, 33, 33);
+    transition: 200ms;
+}
+
+div.container div.nav-bar nav div.playing-lists button.create-list svg.like-svg{
+    fill: #fff;
+}
+
+div.container div.nav-bar nav div.playing-lists button.create-list svg.like-svg path {
+    width: 10px;
+    height: 10px;
+}
+
+
+/*now-playing*/
+
+
+div.now-playing-bar {
+    position: fixed;
+    width: 1366px;
+    height: 91px;
+    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgb(26, 26, 26);
+    margin-left: -8px;
+}
+
+div.now-playing-bar div.now-playing-bar-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+    height: 90px;
+}
+
+div.now-playing-bar div.now-playing-bar-left span {
+    display: grid;
+}
+
+div.now-playing-bar div.now-playing-bar-left div.cover-art {
+    padding: 15px;
+}
+
+div.now-playing-bar div.now-playing-bar-left div.cover-art img {
+    width: 56px;
+}
+
+div.now-playing-bar div.now-playing-bar-left div.cover-art-info span.track-name {
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+}
+
+div.now-playing-bar div.now-playing-bar-left div.cover-art-info span.art-name {
+    color: gray;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+div.now-playing-bar div.now-playing-bar-left div.cover-art-button {
+    padding-left: 25px;
+}
+
+div.now-playing-bar div.now-playing-bar-left div.cover-art-button svg {
+    padding-right: 10px;
+    color: rgb(158, 158, 158);
+}
+
+div.now-playing-bar div.now-playing-bar-center {
+    width: 400px;
+    height: 60px;
+    padding-right: 80px;
+}
+
+div.now-playing-bar div.now-playing-bar-center div.player-controls-buttons button {
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+}
+
+div.now-playing-bar div.now-playing-bar-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 30px;
+}
+
+div.now-playing-bar div.now-playing-bar-right button {
+    background-color: transparent;
+    border: none;
+}
+
+div.now-playing-bar div.now-playing-bar-right button i {
+    color: #b3b3b3;
+}
+
+div.now-playing-bar div.now-playing-bar-right div.slidecontainer i {
+    color: #b3b3b3;
+}
+
+.slidecontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%; 
+}
+
+.slider {
+    width: 70%; 
+    height: 4px; 
+    background: #d3d3d3; 
+    outline: none;
+    opacity: 0.7;  
+    transition: opacity .2s;
+    margin-left: 10px;
+    margin-right: -50px;
+    padding-right: 15px;
+}
+  
+.slider:hover {
+    opacity: 1; 
+}
+  
+.slider::-webkit-slider-thunpb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    background: #4CAF50; 
+    cursor: pointer; 
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px; 
+    height: 25px; 
+    background: #4CAF50; 
+    cursor: pointer; 
+}
+
+div.now-playing-bar div.now-playing-bar-center div.playback-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+div.now-playing-bar div.now-playing-bar-center div.playback-bar div.playback-bar-time {
+    padding: 5px;
+    color: gray;
+    font-size: 12px;
+}
+
+div.now-playing-bar div.now-playing-bar-center div.playback-bar div.progress-bar {
+    padding-bottom: 11px;
+}
+
+div.now-playing-bar div.now-playing-bar-center div.playback-bar div.progress-bar button.progress-bar-slider {
+    background: gray;
+    border: none;
+    border-radius: 15px;
+}
+
+div.now-playing-bar div.now-playing-bar-center div.playback-bar div.progress-bar button.progress-bar-slider {
+    width: 453px;
+    height: 4px;
+}
